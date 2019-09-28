@@ -22,5 +22,10 @@ def playlists_index():
     """Show all playlists."""
     return render_template('playlists_index.html.j2', playlists=playlists.find())
 
+@app.route('/playlists/new')
+def new_playlists():
+    """ Create a new playlist"""
+    return render_template('new_playlists.html.j2')
+
 if __name__ == '__main__':
     app.run(debug=True)
