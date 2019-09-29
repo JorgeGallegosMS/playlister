@@ -1,7 +1,7 @@
 {% extends 'base.html.j2' %}
 
 {% block content %}
-<form action='/playlists' method='POST'>
+<form action="/playlists/{{playlist._id}}" method="POST">
     {% include 'partials/playlists_form.html.j2' %}
 </form>
 {% endblock %}
