@@ -39,7 +39,7 @@ def playlists_submit():
         'videos': request.form.get('videos').split()
     }
     playlist_id = playlists.insert_one(playlist).inserted_id
-    return redirect(url_for('playlists_show', playlist_id = playlist_id))
+    return redirect(url_for('playlists_show', playlist_id=playlist_id))
 
 # READ
 @app.route('/playlists/<playlist_id>')

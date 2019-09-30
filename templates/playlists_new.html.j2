@@ -1,7 +1,11 @@
 {% extends 'base.html.j2' %}
 
 {% block content %}
-<form action='/playlists' method='POST'>
-    {% include 'partials/playlists_form.html.j2' %}
-</form>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <form action='/playlists' method='POST'>
+            {% include 'partials/playlists_form.html.j2' %}
+        </form>
+    </div>
+</div>
 {% endblock %}
