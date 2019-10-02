@@ -27,6 +27,12 @@
         <hr>
 
         {% include 'partials/comment_form.html.j2' %}
+
+        <hr>
+
+        {% for comment in comments %}
+            {% include 'partials/comment.html.j2' %}
+        {% endfor %}
     </div>
 </div>
 
